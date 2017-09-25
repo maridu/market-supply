@@ -1,0 +1,25 @@
+.main {
+
+}
+
+.main-content-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+
+.products {
+  width: calc(100% - 297px - 40px);
+  
+  outline: 1px solid green;
+  
+}
+
+.sidebar {
+  order: -1;
+  width: 297px;
+  margin-right: 40px;
+  
+  outline: 1px solid red;
+}

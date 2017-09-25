@@ -1,0 +1,53 @@
+$main-font: Lato, Arial, sans-serif;
+$main-font-size: 15px;
+$main-bg-color: #f3f3f3;
+$gray-text-color: #3d3d3d;
+$red-bg-color: #f10e34;
+$red-active-color: #f76e85;
+
+html {
+  margin: 0;
+  padding: 0;
+  font: {
+    family: $main-font;
+    size: $main-font-size;
+    weight: 400;
+  }
+}
+
+body {
+  @extend html;
+  background-color: $main-bg-color;
+  color: $gray-text-color;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  clip: rect(0 0 0 0);
+}
+
+.main-wrapper {
+  width: 95%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+@import "header";
+@import "main";
+@import "main-menu";
