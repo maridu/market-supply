@@ -1,0 +1,53 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-american_express {
+    width: 45px;
+    height: 31px;
+    background-position: -5px -5px;
+}
+
+.sprite-diners {
+    width: 45px;
+    height: 31px;
+    background-position: -60px -5px;
+}
+
+.sprite-discover {
+    width: 45px;
+    height: 31px;
+    background-position: -115px -5px;
+}
+
+.sprite-jsb {
+    width: 46px;
+    height: 31px;
+    background-position: -170px -5px;
+}
+
+.sprite-mastercard {
+    width: 46px;
+    height: 31px;
+    background-position: -226px -5px;
+}
+
+.sprite-rating {
+    width: 86px;
+    height: 14px;
+    background-position: -282px -5px;
+}
+
+.sprite-stripe {
+    width: 46px;
+    height: 31px;
+    background-position: -378px -5px;
+}
+
+.sprite-visa {
+    width: 45px;
+    height: 31px;
+    background-position: -434px -5px;
+}
