@@ -1,0 +1,80 @@
+.sidebar {
+  order: -1;
+  width: 297px;
+  margin-right: 40px;
+}
+
+.hot-deals {
+  @extend .new;
+  @include section-box-shadow;
+}
+
+.hot-deals__photo {
+  width: 246px;
+  height: 203px;
+  overflow: hidden;
+}
+
+.sidebar-main .slick-prev {
+  left: 70%;
+}
+
+.sidebar-main .slick-next {
+  left: 82%;
+}
+
+.special-deal {
+  @extend .hot-deals;
+}
+
+.special-deal__title {
+  margin-right: 10px;
+}
+
+.special-deal__photo {
+  @extend .hot-deals__photo;
+}
+
+.subscribe {
+  @extend .new;
+}
+
+.subscribe__label {
+  display: block;
+  color: $gray-text-color;
+  margin-bottom: 15px;
+}
+
+.subscribe__input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid transparent;
+  margin-bottom: 25px;
+  box-sizing: border-box;
+  background-color: $main-bg-color;
+}
+
+.subscribe__input:focus {
+  border-color: $gray-text-color;
+  outline: none;
+}
+
+.subscribe__btn {
+  @extend .hit__btn;
+  border: 0;
+}
+
+.adv__link {
+  &:hover {
+    opacity: 0.7;
+  }
+  
+  &:focus {
+    @extend .adv__link:hover;
+    outline: none;
+  }
+  
+  &:active {
+    opacity: 0.5;
+  }
+}

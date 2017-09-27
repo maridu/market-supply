@@ -7,7 +7,6 @@
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-//  width: 100%;
   padding: 15px 0 25px 0;
 }
   
@@ -22,13 +21,11 @@
 }
 
 .header-nav__list {
-  margin: 0;
+  @include list;
   margin-bottom: 5px;
-  padding: 0;
   
   text-align: right;
   
-  list-style: none;
 }
 
 .header-nav__item {
@@ -45,21 +42,20 @@
   margin: 15px;
   margin-top: 0;
 
-
   color: #fff;
-}
-
-.header-nav__link:hover {
-  color: $red-bg-color;
-}
-
-.header-nav__link:focus {
-  @extend .header-nav__link:hover;
-  outline: none;
-}
-
-.header-nav__link:active {
-  color: $red-active-color;
+  
+  &:hover {
+    color: $red-bg-color;
+  }
+  
+  &:focus {
+    @extend .header-nav__link:hover;
+    outline: none;
+  }
+  
+  &:active {
+    color: $red-active-color;
+  }
 }
 
 .header-nav__item:last-child > .header-nav__link {
@@ -105,12 +101,12 @@
   box-sizing: border-box;
   
   border-radius: 5px 0 0 5px;
+  
+  &:focus {
+    background-color: #eee;
+    outline: none;
+  }
 }
-
-.search__input:focus {
-  background-color: #eee;
-  outline: none;
-} 
 
 .search__button {
   width: 54px;
@@ -120,19 +116,19 @@
   background-size: 14px;
   border-radius: 0 5px 5px 0;
   cursor: pointer;
-}
-
-.search__button:hover {
-  background-color: #f55671;
-}
-
-.search__button:focus {
-  @extend .search__button:hover;
-  outline: none;
-}
-
-.search__button:active {
-  background-color: $red-active-color;
+  
+  &:hover {
+    background-color: $red-hover-color;
+  }
+  
+  &:focus {
+    @extend .search__button:hover;
+    outline: none;
+  }
+  
+  &:active {
+    background-color: $red-active-color;
+  }
 }
 
 .basket {
@@ -155,19 +151,19 @@
   box-sizing: border-box;
   
   color: #fff;
-}
-
-.basket__link:hover {
-  color: $red-bg-color;
-}
-
-.basket__link:focus {
-  @extend .basket__link:hover;
-  outline: none;
-}
-
-.basket__link:active {
-  color: $red-active-color
+  
+  &:hover {
+    color: $red-bg-color;
+  }
+  
+  &:focus {
+    @extend .basket__link:hover;
+    outline: none;
+  }
+  
+  &:active {
+    color: $red-active-color;
+  }
 }
 
 .basket::before {

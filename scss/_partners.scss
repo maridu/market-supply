@@ -1,0 +1,29 @@
+.partners {
+
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: $red-bg-color;
+}
+
+.partners__list {
+  @include list;
+  
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.partners__link {
+  &:hover {
+    opacity: 0.7;
+  }
+  
+  &:focus {
+    opacity: 0.7;
+    outline: none;
+  }
+  
+  &:active {
+    opacity: 0.5;
+  }
+}

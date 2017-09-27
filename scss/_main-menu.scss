@@ -27,6 +27,7 @@
   box-sizing: border-box;
   
   font-size: $main-font-size;
+  color: #fff;
 }
 
 .main-menu__title::before {
@@ -47,10 +48,8 @@
   flex-flow: row wrap;
   align-items: center;
   width: calc(100% - 297px - 40px);
-  padding: 0;
-  margin: 0;
   box-sizing: border-box;
-  list-style: none;
+  @include list;
   
   
 }
@@ -61,17 +60,17 @@
 
 .main-menu__link {
   color: #fff;
-}
-
-.main-menu__link:hover {
-  color: $gray-text-color;
-}
-
-.main-menu__link:focus {
-  @extend .main-menu__link:hover;
-  outline: none;
-}
-
-.main-menu__link:active {
-  color: #bbb;
+  
+  &:hover {
+    color: $gray-text-color;
+  }
+  
+  &:focus {
+    @extend .main-menu__link:hover;
+    outline: none;
+  }
+  
+  &:active {
+    color: #bbb;
+  }
 }

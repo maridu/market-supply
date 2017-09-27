@@ -1,0 +1,283 @@
+.footer {
+  margin: 0;
+  padding: 0;
+}
+
+.main-info {
+  padding-top: 60px;
+  padding-bottom: 65px;
+  font-size: 14px;
+  line-height: 2;
+  color: #b6b6b6;
+  background-color: #222;
+}
+
+.columns {
+  @include list;
+  
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.columns__item {
+}
+
+.column-1 {
+  width: 290px;
+}
+
+.column-2 {
+  width: 160px;
+}
+
+.column-3 {
+  width: 280px;
+}
+
+.column-4 {
+  width: 290px;
+}
+
+.contacts {
+  @include list;
+}
+
+.contacts__item {
+  position: relative;
+  padding-left: 30px;
+  
+  &::before {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    content: '';
+    display: block;
+    margin-top: -7px;
+    width: 14px;
+    height: 14px;
+  }
+}
+
+.location::before {
+  background: url(../img/design/icons/location.svg) no-repeat center center;
+}
+
+.phone::before {
+  background: url(../img/design/icons/phone.svg) no-repeat center center;
+  background-size: cover;
+}
+
+.mail::before {
+  background: url(../img/design/icons/mail.svg) no-repeat center center;
+}
+
+.contacts__link {
+  color: $footer-text-color;
+  
+  &:hover {
+    color: $red-bg-color;
+  }
+  
+  &:focus {
+    @extend .contacts__link:hover;
+    outline: none;
+  }
+  
+  &:active {
+    color: $red-active-color;
+  }
+}
+
+.footer__title {
+  margin-top: 10px;
+  margin-bottom: 7px;
+  font-size: 18px;
+  color: #fff;
+}
+
+.info__list {
+  @include list;
+}
+
+.info__link {
+  @extend .contacts__link;
+}
+
+.social__list {
+  @include list;
+  
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.social__col {
+  width: 40%;
+}
+
+.social__link {
+  @extend .contacts__link;
+}
+
+.social__col-left {
+  @include list;
+}
+
+.social__col-right {
+  @include list;
+}
+
+.social__item {
+  position: relative;
+  padding-left: 30px;
+  
+  &::before {
+    position: absolute;
+    top: 40%;
+    left: 0;
+    content: "";
+    width: 20px;
+    height: 20px;
+    margin-top: -10px;
+  }
+}
+
+.gplus::before {
+  background: url(../img/design/icons/google+.svg) no-repeat center center;
+}
+
+.pinterest::before {
+  background: url(../img/design/icons/pinterest.svg) no-repeat center center;
+  background-size: cover;
+}
+
+.vimeo::before {
+  background: url(../img/design/icons/vimeo.svg) no-repeat center center;
+}
+
+.instagram::before {
+  background: url(../img/design/icons/instagram.svg) no-repeat center center;
+}
+
+.facebook::before {
+  background: url(../img/design/icons/facebook.svg) no-repeat center center;
+  background-size: 70%;
+}
+
+.twitter::before {
+  background: url(../img/design/icons/twitter.svg) no-repeat center center;
+  background-size: 70%;
+}
+
+.rss::before {
+  background: url(../img/design/icons/rss.svg) no-repeat center center;
+  background-size: 60%;
+}
+
+.youtube::before {
+  background: url(../img/design/icons/youtube.svg) no-repeat center center;
+}
+
+.schedule__wrapper {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 55px;
+  
+  &:before {
+    position: absolute;
+    top: 7px;
+    left: 0;
+    content: "";
+    display: block;
+    width: 14px;
+    height: 14px;
+    background: url(../img/design/icons/clock.svg) no-repeat center center;
+    
+  }
+}
+
+.schedule__description {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.payment__list {
+  @include list;
+  
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.payment__item {
+  width: 45px;
+  height: 31px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  background: url(../img/design/spritesheet.png) no-repeat;
+}
+
+.mastercard {
+  background-position: -226px -5px;
+}
+
+.discover {
+  background-position: -115px -5px;
+}
+
+.amer-exp {
+  background-position: -5px -5px;
+}
+
+.visa {
+  background-position: -434px -5px;
+}
+
+.stripe {
+  background-position: -378px -5px;
+}
+
+.diners {
+  background-position: -60px -5px;
+}
+
+.jsb {
+  background-position: -170px -5px;
+}
+
+.footer-menu {
+  @include list;
+  padding-top: 40px;
+  padding-bottom: 15px;
+  text-align: center;
+  background-color: #1f1e1e;
+}
+
+.footer-menu__item {
+  display: inline-block;
+  vertical-align: baseline;
+  padding: 5px;
+  margin-right: 20px;
+  
+}
+
+.footer-menu__item:last-child {
+  margin-right: 0;
+}
+
+.footer-menu__link {
+  @extend .contacts__link;
+  color: #fff;
+}
+
+.copyright {
+  margin: 0;
+  padding: 10px;
+  padding-bottom: 35px;
+  text-align: center;
+  color: #fff;
+  
+  background-color: #1f1e1e;
+  
+  outline: 1px solid #1f1e1e;
+}
