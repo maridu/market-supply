@@ -1,39 +1,17 @@
 .products {
   width: calc(100% - 297px - 40px);
   
+  @media screen and (max-width: 1000px) {
+    width: 100%;
+  }
 }
 
 .main-products-wrapper {
   margin-bottom: 68px;
-}
-
-.features {
-  display: flex;
-  flex-flow: row wrap;
-  @include list;
-  padding: 2px;
-  box-sizing: border-box;
-  background-color: $red-bg-color;
-}
-
-.features__item {
-  width: 33.333%;
-  padding: 5px;
-  box-sizing: border-box;
-  text-align: center;
-  font-size: $main-font-size;
-  color: #fff;
-}
-
-.features__name {
-  margin-bottom: 0;
-  font-weight: 700;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-}
-
-.features__description {
-  margin-top: 0;
+  
+  @media screen and (max-width: 1000px) {
+    margin-bottom: 0;
+  }
 }
 
 .new {
@@ -86,13 +64,37 @@
   outline: none;
 }
 
+.products__img {
+  margin: 0 auto;
+}
+
 .new .slick-prev {
   position: absolute;
   top: -55px;
   left: 90%;
   width: 25px;
   height: 25px;
-
+  
+  @media screen and (max-width: 1100px) {
+    left: 88%;
+  }
+  
+  @media screen and (max-width: 1000px) {
+    left: 90%;
+  }
+  
+  @media screen and (max-width: 750px) {
+    left: 86%;
+  }
+  
+  @media screen and (max-width: 550px) {
+    left: 82%;
+  }
+  
+  @media screen and (max-width: 450px) {
+    top: -90px;
+    left: 76%;
+  }
 }
 
 .new .slick-next {
@@ -101,6 +103,19 @@
   left: 94%;
   width: 25px;
   height: 25px;
+  
+  @media screen and (max-width: 750px) {
+    left: 92%;
+  }
+  
+  @media screen and (max-width: 550px) {
+    left: 90%;
+  }
+  
+  @media screen and (max-width: 450px) {
+    top: -90px;
+    left: 88%;
+  }
 }
 
 .new .slick-prev::before,
@@ -144,8 +159,8 @@
 }
 
 .stars-4 {
-  background: url(../img/design/spritesheet.png) no-repeat;
-  background-position: -282px -5px;
+  background: url(../img/design/sprite.png) no-repeat;
+  background-position: -328px -5px;
 }
 
 /* Sale */
@@ -155,6 +170,10 @@
   flex-flow: row wrap;
   justify-content: space-between;
   margin-bottom: 38px;
+  
+  @media screen and (max-width: 550px) {
+    margin-bottom: 0;
+  }
 }
 
 .sale__item {
@@ -162,6 +181,12 @@
   max-width: 395px;
   
   @include section-box-shadow;
+  
+  @media screen and (max-width: 550px) {
+    width: 100%;
+    max-width: 395px;
+    margin: 0 auto 40px auto;
+  }
 }
 
 .sale__link {
@@ -206,6 +231,12 @@
 
 .hit__photo {
   margin-right: 10px;
+  
+  @media screen and (max-width: 1250px) {
+    width: 100%;
+    text-align: center;
+  }
+  
 }
 
 .hit__info {
@@ -213,6 +244,19 @@
   line-height: 1.5;;
   font-weight: 700;
   text-transform: uppercase;
+  
+  @media screen and (max-width: 1250px) {
+    width: 100%;
+    text-align: center;
+  }
+  
+  @media screen and (max-width: 600px) {
+    font-size: 18px;
+  }
+  
+  @media screen and (max-width: 400px) {
+    font-size: 16px;
+  }
 }
 
 .hit__details {
@@ -248,6 +292,10 @@
   @extend .new;
   padding-bottom: 20px;
   margin-bottom: 0;
+  
+  @media screen and (max-width: 1000px) {
+    margin-bottom: 40px;
+  }
 }
 
 .featured__top-wrapper {

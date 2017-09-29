@@ -10,6 +10,11 @@
   line-height: 2;
   color: #b6b6b6;
   background-color: #222;
+  
+  @media screen and (max-width: 800px) {
+    padding-top: 40px;
+    padding-bottom: 5px;
+  }
 }
 
 .columns {
@@ -25,18 +30,79 @@
 
 .column-1 {
   width: 290px;
+  
+  margin-bottom: 30px;
+  
+  @media screen and (max-width: 800px) {
+    width: 48%;
+  }
+  
+  @media screen and (max-width: 650px) {
+    width: 95%;
+    margin: 0 auto 30px auto;
+  }
 }
 
 .column-2 {
   width: 160px;
+  
+  @media screen and (max-width: 800px) {
+    width: 48%;
+    margin-bottom: 30px;
+  }
+  
+  @media screen and (max-width: 650px) {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 .column-3 {
   width: 280px;
+  
+  @media screen and (max-width: 800px) {
+    width: 48%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
+  @media screen and (max-width: 650px) {
+    width: 95%;
+    max-width: 280px;
+    margin: 0 auto 30px auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    text-align: center;
+  }
 }
 
 .column-4 {
   width: 290px;
+  
+  @media screen and (max-width: 1100px) {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 95%;
+    margin: 0 auto 30px auto;
+  }
+  
+  @media screen and (max-width: 800px) {
+    width: 48%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
+  @media screen and (max-width: 650px) {
+    width: 95%;
+    margin: 0 auto 30px auto;
+    
+  }
+}
+
+.social {
+  width: 100%;
 }
 
 .contacts {
@@ -92,8 +158,14 @@
 .footer__title {
   margin-top: 10px;
   margin-bottom: 7px;
+  margin-right: 0;
   font-size: 18px;
   color: #fff;
+  
+  @media screen and (max-width: 650px) {
+    text-align: center;
+  }
+
 }
 
 .info__list {
@@ -179,6 +251,17 @@
   background: url(../img/design/icons/youtube.svg) no-repeat center center;
 }
 
+.schedule {
+  @media screen and (max-width: 1100px) {
+    width: 290px;
+    margin-right: 50px;
+  }
+  
+  @media screen and (max-width: 650px) {
+    margin-right: 0;
+  }
+} 
+
 .schedule__wrapper {
   position: relative;
   padding-left: 30px;
@@ -202,6 +285,16 @@
   margin-bottom: 10px;
 }
 
+.payment {
+  @media screen and (max-width: 1100px) {
+    width: 290px;
+  }
+}
+
+.payment__title {
+  margin-bottom: 18px;
+}
+
 .payment__list {
   @include list;
   
@@ -214,7 +307,7 @@
   height: 31px;
   margin-right: 20px;
   margin-bottom: 20px;
-  background: url(../img/design/spritesheet.png) no-repeat;
+  background: url(../img/design/sprite.png) no-repeat;
 }
 
 .mastercard {
@@ -230,11 +323,11 @@
 }
 
 .visa {
-  background-position: -434px -5px;
+  background-position: -480px -5px;
 }
 
 .stripe {
-  background-position: -378px -5px;
+  background-position: -424px -5px;
 }
 
 .diners {
@@ -280,4 +373,8 @@
   background-color: #1f1e1e;
   
   outline: 1px solid #1f1e1e;
+  
+  @media screen and (max-width: 400px) {
+    font-size: 12px;
+  }
 }

@@ -34,20 +34,32 @@
     background-position: -226px -5px;
 }
 
+.sprite-menu {
+    width: 13px;
+    height: 13px;
+    background-position: -282px -5px;
+}
+
+.sprite-menu_open {
+    width: 13px;
+    height: 13px;
+    background-position: -305px -5px;
+}
+
 .sprite-rating {
     width: 86px;
     height: 14px;
-    background-position: -282px -5px;
+    background-position: -328px -5px;
 }
 
 .sprite-stripe {
     width: 46px;
     height: 31px;
-    background-position: -378px -5px;
+    background-position: -424px -5px;
 }
 
 .sprite-visa {
     width: 45px;
     height: 31px;
-    background-position: -434px -5px;
+    background-position: -480px -5px;
 }

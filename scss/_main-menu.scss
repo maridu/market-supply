@@ -1,4 +1,5 @@
 .main-menu {
+  position: relative;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
@@ -15,6 +16,14 @@
   flex-flow: row wrap;
   justify-content: space-between;
   padding-top: 1px;
+  
+  @media screen and (max-width: 1250px) {
+    justify-content: flex-start;
+  }
+}
+
+.main-menu__toggle {
+  display: none;
 }
 
 .main-menu__title {
@@ -28,6 +37,13 @@
   
   font-size: $main-font-size;
   color: #fff;
+  
+  @media screen and (max-width: 1250px) {
+      &:hover {
+      cursor: pointer;
+    }
+  }
+    
 }
 
 .main-menu__title::before {
@@ -38,9 +54,7 @@
   display: block;
   width: 60px;
   height: 14px;
-  background: url(../img/design/icons/menu.svg) no-repeat center center;
- background-size: 55%;
-
+  background: url(../img/design/icons/menu.png) no-repeat center center;
 }
 
 .main-menu__list {
@@ -51,11 +65,28 @@
   box-sizing: border-box;
   @include list;
   
-  
+  @media screen and (max-width: 1250px) {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    z-index: 10;
+    display: block;
+    width: 250px;
+    padding-left: 50px;
+    
+    background-color: $red-bg-color;
+    
+    display: none;
+  }
 }
 
 .main-menu__item {
   margin: 20px;
+  
+  @media screen and (max-width: 1250px) {
+    margin: 0;
+    border-top: 1px solid #fff;
+  }
 }
 
 .main-menu__link {
@@ -73,4 +104,16 @@
   &:active {
     color: #bbb;
   }
+  
+  @media screen and (max-width: 1250px) {
+    display: block;
+    padding: 15px;
+  }
 }
+
+@media screen and (max-width: 1250px) {
+  .main-menu__toggle:checked ~ .main-menu__list {
+    display: block;
+  }
+}
+

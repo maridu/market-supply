@@ -2,29 +2,109 @@
   order: -1;
   width: 297px;
   margin-right: 40px;
+  
+
+  @media screen and (max-width: 1000px) {
+    order: 1;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 40px;
+    margin-right: 0;
+  }
+  
+  @media screen and (max-width: 850px) {
+    margin-bottom: 0;
+  }
+  
+  @media screen and (max-width: 600px) {
+    justify-content: space-between;
+  }
 }
 
 .hot-deals {
   @extend .new;
   @include section-box-shadow;
+  
+  @media screen and (max-width: 1000px) {
+    width: calc((100% - 40px - 40px - 200px)/2);
+    max-width: 297px;
+    min-width: 250px;
+    margin-right: 40px;
+  }
+  
+  @media screen and (max-width: 850px) {
+    width: 45%;
+    max-width: 297px;
+    min-width: 250px;
+    margin-right: 40px;
+  }
+  
+  @media screen and (max-width: 600px) {
+    width: 45%;
+    margin-right: 0;
+  }
+  
+  @media screen and (max-width: 550px) {
+    width: 100%;
+    max-width: 297px;
+    margin: 0 auto 40px auto;
+  }
+}
+
+.hot-deals__title {
+  
+}
+
+.aside-top-wrapper {
+  @media screen and (max-width: 1000px) {
+    width: 100%;
+    padding-right: 0;
+  }
 }
 
 .hot-deals__photo {
-  width: 246px;
+  width: 100%;
+  max-width: 246px;
   height: 203px;
   overflow: hidden;
+  
+  @media screen and (max-width: 600px) {
+    height: 170px;
+  }
+  
+  @media screen and (max-width: 550px) {
+    height: 203px;
+  }
 }
 
 .sidebar-main .slick-prev {
   left: 70%;
+  top: -55px;
 }
 
 .sidebar-main .slick-next {
   left: 82%;
+  top: -55px;
 }
 
 .special-deal {
   @extend .hot-deals;
+  
+  @media screen and (max-width: 850px) {
+    margin-right: 0;
+  }
+  
+  @media screen and (max-width: 600px) {
+    width: 45%;
+  }
+  
+  @media screen and (max-width: 550px) {
+    width: 100%;
+    max-width: 297px;
+    margin: 0 auto 40px auto;
+  }
 }
 
 .special-deal__title {
@@ -37,6 +117,21 @@
 
 .subscribe {
   @extend .new;
+  
+  @media screen and (max-width: 1000px) {
+    width: 70%;
+    order: 1;
+  }
+  
+  @media screen and (max-width: 850px) {
+    width: calc(100% - 200px - 40px);
+  }
+  
+  @media screen and (max-width: 550px) {
+    order: 1;
+    width: 100%;
+    margin: 0 auto 40px auto;
+  }
 }
 
 .subscribe__label {
@@ -62,6 +157,31 @@
 .subscribe__btn {
   @extend .hit__btn;
   border: 0;
+}
+
+.adv {
+  @media screen and (max-width: 1000px) {
+    width: 20%;
+    max-width: 200px;
+    min-width: 185px;
+  }
+  
+  @media screen and (max-width: 850px) {
+    margin-right: 40px;
+    margin-bottom: 40px;
+
+  }
+  
+  @media screen and (max-width: 600px) {
+    margin-right: 0;
+  }
+  
+  @media screen and (max-width: 550px) {
+    order: 1;
+    width: 100%;
+    max-width: 297px;
+    margin: 0 auto 40px auto;  
+  }
 }
 
 .adv__link {
