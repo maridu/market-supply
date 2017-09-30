@@ -31,7 +31,7 @@ img {
   clip: rect(0 0 0 0);
 }
 
-.main-wrapper {
+.main-wrapper, .intro__wrapper {
   width: 95%;
   max-width: 1170px;
   min-width: 304px;
@@ -1125,6 +1125,12 @@ img {
 }
 .adv__link:active {
   opacity: 0.5;
+}
+
+@media screen and (max-width: 1250px) {
+  .intro__wrapper {
+    width: 100%;
+  }
 }
 
 .intro__sidebar {

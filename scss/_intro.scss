@@ -1,3 +1,11 @@
+.intro__wrapper {
+  
+  @extend .main-wrapper;
+
+  @media screen and (max-width: 1250px) {
+    width: 100%;
+  }  
+}
 
 .intro__sidebar {
   width: 297px;
